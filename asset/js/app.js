@@ -48,3 +48,8 @@ const div = document.querySelectorAll('div')
 
     })
 
+//username
+const username = document.getElementById('username');
+
+const userInfo = JSON.parse(window.localStorage.getItem("user"))
+username.innerHTML = userInfo.name;

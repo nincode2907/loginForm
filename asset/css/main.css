@@ -78,6 +78,14 @@ font-family: 'Poppins', sans-serif;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: inline-block;
+}
+
+.user-status-question {
+    display: inline-block;
+    font-style: italic;
+    padding-left: 10px;
+    color: rgb(189, 180, 180);
 }
 
 /* Content */
