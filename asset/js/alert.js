@@ -1,7 +1,7 @@
+import addUser, {checkHaveAcc,checkLogInRight, addUserSignIn} from "./addUser.js"
 const alertList = document.querySelector(".main_alert_list")
 const signIn = document.getElementById("sign_in")
 const signUp = document.getElementById("sign_up")
-import addUser, {checkHaveAcc,checkLogInRight, addUserSignIn} from "./addUser.js"
 
 const messageList = []
 
@@ -31,6 +31,8 @@ function alertNotification(notification, description, messageList) {
     },5000)
 }
 
+//handle form Sign In
+
 signIn.onclick = () => {
     const user = document.getElementById("username_login");
     const pass = document.getElementById("password_login");
@@ -55,7 +57,7 @@ signIn.onclick = () => {
     }
 }
 
-
+//handle form Sign UP
 
 signUp.onclick = () => {
     const user = document.getElementById("username_signup");
@@ -91,3 +93,5 @@ signUp.onclick = () => {
         }
     }
 }
+
+document.addEventListener('contextmenu', e => e.preventDefault());
