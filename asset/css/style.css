@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+#main {
+    /* width: 100%; */
+    position: relative;
+    max-width: 1920px;
+    height: 100vh;
+    overflow-x:hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0F2F5;
+}
+
+.header {
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: 4px;
+}
+
+.body {
+    width: 700px;
+    height: 280px;
+    border-radius: 8px;
+    display: flex;
+    background-color: #fff;
+    position: relative;
+    margin-top: 100px;
+}
+
+.classouter {
+    position: absolute;
+    left: 15px;
+    top: -30px;
+    width: 322px;
+    height:336px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 8px;
+    transition: all 1s ease;
+    z-index: 2;
+}
+
+.change {
+    transform: translateX(362px)
+    /* left: 362px; */
+}
+
+.form {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_heading {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.form_content {
+    text-align: center;
+}
+
+.form_content_input_group {
+    width: 280px;
+    height: 36px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.form_content_input_group_input {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    padding: 14px;
+    border: 1px solid #ddd;
+    outline:none;
+}
+
+.form_content_input_group_input:focus {
+    border: 1px solid rgb(31, 115, 194);
+}
+
+.form_content_input_group_input:focus + .form_content_input_group_label {
+    top: -8px !important;
+}
+
+.form_content_input_group_label {
+    position: absolute;
+    left: 15px;
+    top: 8px;
+    font-size: 0.8rem;
+    color: #9a9a9a;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.form_content_submit {
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding: 7px 11px;
+    border-radius: 35px;
+    border: 0px;
+    background-color: rgb(174 162 247);
+    transition: all 0.3s ease;
+}
+
+.form_content_submit:hover {
+    cursor: pointer;
+    background-color: #9D8FF8;
+}
+
+.form_heading_router {
+    color: #000;
+    font-size: 0.7rem;
+    margin-top: 15px;
+}
+
+.form_heading_router:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.main_alert_list {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    list-style: none;
+}
+
+.main_alert_item {
+    min-width: 300px;
+    height:54px;
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 2px 4px 1px #dbd8d8;
+    border-radius: 2px;
+    background-color: #fff;
+    position: relative;
+    transition: all 0.2s ease;
+    margin-bottom: 10px;
+}
+
+.alert_fade_in {
+    animation: alertFadeIn 1s ease 0s 1 normal forwards;
+}
+
+.alert_fade_out {
+    animation: alertFadeOut 1s ease 0s 1 normal forwards;
+}
+
+@keyframes alertFadeOut {
+    0% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+
+@keyframes alertFadeIn {
+    0% {
+      opacity: 0;
+      transform: translateX(650px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+.main_alert_item--error {
+    border-left: 5px solid #FF623D;
+}
+
+.main_alert_item--success {
+    border-left: 5px solid #37a54f;
+}
+
+.main_alert_item_content {
+
+}
+
+.main_alert_item_content_notification {
+    font-size: 0.9rem;
+    text-transform: capitalize;
+}
+
+.main_alert_item_content_description {
+    font-size: 0.8rem;
+    color: #8f8686;
+}
+
+
+.main_alert_item_icon_noti {
+    font-size: 1.5rem;
+    margin: 0 20px;
+}
+
+.main_alert_item--error .main_alert_item_icon_noti {
+    color:#FF623D;
+}
+
+.main_alert_item--success .main_alert_item_icon_noti {
+    color:#37a54f;
+}
+
+.main_alert_item_icon_close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 0.8rem;
+    color: #a9a2a2;
+}
+
+.main_alert_item_icon_close:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}

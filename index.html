@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/css/style.css" />
+    <link rel="icon" href="./asset/img/question.jpg" type="image/icon type"> 
+    <title>Contest MPC</title>
+    <script src="https://kit.fontawesome.com/8bab96838f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="main">
+        <h1 class="header">contest mpc</h1>
+        <div class="body">
+            <div class="form">
+                <div class="classouter "></div>
+                <h3 class="form_heading">Sign Up</h3>
+                <form action="signup" class="form_content">
+                    <div class="form_content_input_group">
+                        <input type="text" class="form_content_input_group_input" id="username_signup" autocomplete="off">
+                        <label for="username_signup" class="form_content_input_group_label">Username</label>
+                    </div>
+                    <div class="form_content_input_group">
+                        <input type="password" class="form_content_input_group_input" id="password_signup" autocomplete="off">
+                        <label for="password_signup" class="form_content_input_group_label">Password</label>
+                    </div>
+                    <div class="form_content_input_group">
+                        <input type="password" class="form_content_input_group_input" id="password_confirm_signup" autocomplete="off">
+                        <label for="password_confirm_signup" class="form_content_input_group_label">Confirm Password</label>
+                    </div>
+                    <span class="form_content_submit" id="sign_up">Sign Up</span>
+                </form>
+                <p href="#" class="form_heading_router">Already have an account?</p>
+            </div>
+            <div class="form">
+                <h3 class="form_heading">Sign In</h3>
+                <form action="signin" class="form_content">
+                    <div class="form_content_input_group">
+                        <input type="text" class="form_content_input_group_input" id="username_login" autocomplete="off">
+                        <label for="username_login" class="form_content_input_group_label">Username</label>
+                    </div>
+                    <div class="form_content_input_group">
+                        <input type="password" class="form_content_input_group_input" id="password_login" autocomplete="off">
+                        <label for="password_login" class="form_content_input_group_label">Password</label>
+                    </div>
+                    <span class="form_content_submit" id="sign_in">Sign In</span>
+                </form>
+                <p class="form_heading_router">Create a new account?</p>
+            </div>
+        </div>
+        <ul class="main_alert_list">
+        </ul>
+    </div>
+    <script type="text/javascript" src="./asset/js/main.js" ></script>
+    <script type="module" src="./asset/js/alert.js" ></script>
+</body>
+</html>
