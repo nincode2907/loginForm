@@ -71,6 +71,7 @@ font-family: 'Poppins', sans-serif;
     height: 40px;
     border-radius: 50%;
     border: 1px solid #ddd;
+    transition: all 1.5s ease;
 }
 
 .icon-user {
@@ -78,6 +79,21 @@ font-family: 'Poppins', sans-serif;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.user:hover > .sub-user {
+    display: block;
+} 
+
+.sub-user {
+    position: absolute;
+    top: 140%;
+    left: -200%;
+    display: none;
+}
+
+.sub-user a {
+    margin-top: 12px;
 }
 
 /* Content */
